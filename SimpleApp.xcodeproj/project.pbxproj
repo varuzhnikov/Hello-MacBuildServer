@@ -170,6 +170,7 @@
 				40C9BB6216C2552B00A1961B /* Sources */,
 				40C9BB6316C2552B00A1961B /* Frameworks */,
 				40C9BB6416C2552B00A1961B /* Resources */,
+				B1EFB1C4179438E00023F1B9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -263,6 +264,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		B1EFB1C4179438E00023F1B9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Hello!\";\ncd ~/;\ntouch somefile;\ntouch file2;\ncurl www.google.com > somefile;\nrm -rf file2;";
 		};
 /* End PBXShellScriptBuildPhase section */
 
